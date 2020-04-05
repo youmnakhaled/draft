@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import { Link } from 'react-router-dom';
 import '../NavBars.css';
 import axios from 'axios'
+import RecentActivity from './RecentActivity';
 
 class HomeNavBar extends Component {
     constructor(){
@@ -36,12 +37,18 @@ class HomeNavBar extends Component {
 
             <div id="root-navbar-container" className="container m-0 ">
                 <div className="row">
-                    <div id="navbar-arrows"className="col-8 navbar-arrows">
+                    <div id="navbar-arrows"className="col-6 navbar-arrows">
                         <i id="root-navbar-arrows"className="material-icons btn " >keyboard_arrow_left</i>
                         <i id="root-navbar-arrows"className="material-icons btn" >keyboard_arrow_right</i>
+                         
+                        
+                        
                     </div>
                     <div className="col-2">
                         <Link to="/premium"><button id="navbar-upgrade-button">Upgrade</button></Link>
+                    </div>
+
+                    <div className="col-2"><RecentActivity/>
                     </div>
                     <div className="col-2 " id="navbar-profile-section" >
                         <div className="dropdown">

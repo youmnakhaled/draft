@@ -6,7 +6,7 @@ import Footer from '../Footer/footer.js'
 import Navbar from '../Navigation/navbar.js'
 export class MainIndex extends Component {
     render() {
-        {document.title ="Music for everyone - Spotify"}
+        document.title ="Music for everyone - Spotify"
 
         return (
                 <div>

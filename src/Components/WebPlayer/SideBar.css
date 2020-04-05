@@ -4,6 +4,12 @@
   border: border-box;
 }
 
+
+#webplayer-sidebar:not(#create-modal)
+{
+position: fixed;
+z-index: 0;
+}
 #webplayer-sidebar #sidebar-logo.sidebar-logo {
     width:132px;
     /*position: absolute;*/
@@ -107,5 +113,5 @@
     text-transform: uppercase;
     letter-spacing: .16em;
     height: 0;
-    margin: 0 24px 30px 15px;
+margin: 0 24px 30px 15px;
 }
